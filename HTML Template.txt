@@ -1,0 +1,9 @@
+<!DOCTYPE! html>
+<html lang ="en">
+	<head>
+		<title> HTML Template </title>
+		<meta char set ="utf-8">
+	</head>
+	<body> The main content of the page goes here!
+	</body>
+</html>
