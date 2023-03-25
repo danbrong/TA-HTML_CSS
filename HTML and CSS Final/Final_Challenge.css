@@ -1,0 +1,159 @@
+.navbar {
+    background-color: red;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: blue;
+    color: black;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+img {
+    margin: 100px 0px;
+}
+
+.picture {
+    margin: 100px 0px;
+    border: 1px solid blue;
+    border-radius: 100px;
+    border-image-width: 0px;
+    position: relative;
+    text-align: center;
+    color: red;
+    filter: opacity(75%);
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+  
+.container:hover .overlay {
+    opacity: 1;
+}
+  
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+/* Video Embed */
+.movie {
+    position: relative;
+    text-align: center;
+    background-color: black;
+    color: powderblue;
+  }
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+  
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+/* End Video Embed */
+
+p {
+    color: orange;
+}
+
+p:hover {
+    color: purple;
+    background-color: pink;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    color: green;
+    width: 50%;
+    height: 100px;
+}
+
+.row:after {
+    content: "";
+    dispay: table;
+    clear: both;
+}
+
+table, th, td {
+    border: .5px solid;
+    border-collapse: collapse;
+    padding: 5px;
+    margin: 10px auto;
+}
+
+td {
+    text-align: center;
+}
+
+th {
+    background-color: powderblue;
+}
+footer {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: green;
+}

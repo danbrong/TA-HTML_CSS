@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"/>
+        <title>Brandon's Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="./CSS/portfolio.css">
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+        
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!--Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Tunnel_Video">
+                <source src="./Media/video/game_1.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Brandon's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>Life is a series of natural and spontaneous changes. Don't resist them; that only creates sorrow. 
+                    <br>Let reality be reality. Let things flow naturally forward in whatever way they like.
+                    </q>
+                    <br> -Lao Tzu
+                    <br>
+                    <br> My name is Brandon, and this is my portfolio website! Here you can find my relative experience and general background information. I hope you enjoy looking through my portfolio!
+                    <br>
+                    <br> And thank you for your time!
+                </p>
+            </strong>
+        </div>
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="./Media/images/brain_2.png" alt="Brain Image" width = "400px" height = "300px">
+                <img src="./Media/images/kitchen_3.png" alt="Chopping Image" width = "400px" height = "300px">
+                <img src="./Media/images/games_1.png" alt="Controller Image" width = "400px" height = "300px">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am relatively new to software development, having previously worked both in biomedical research, as well as the hospitality industry. I'm fortunate that my time spent in a variety of fields has allowed me to collect many different types of skills, both technical and abstract.
+                    <br>
+                    <br>I am a also a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy's</a> Game Development Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
+                    <br>
+                    <br>I am a full-stack developer and would love to hear from you! <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/danbrong" target="_blank">Brandon's Github</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/danbrong" target="_blank"><img src="./Media/images/GitHub.png" alt="GitHub Logo" height = "400px" width = "400px"></a>
+            </div>
+        </div>
+
+        <!--Contact section-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <img src="./Media/images/phone_1.png" alt="Contact Image" margin-top = "10px" height = "300px" width = "350px">
+            </div>
+            <!--Contact form, right column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <form action="https://formspree.io/f/xbjeawwp" method="POST">
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!--Footer section-->
+        <footer>
+            <p>
+                <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>
