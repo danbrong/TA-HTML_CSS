@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>Mass Effect</title>
+		<meta charset = "utf-8">
+		<link rel = "stylesheet" type = "text/css" href = "./CSS/one-page.css">
+		<link rel = "stylesheet" href = "./CSS/animations.css">
+		<script src = "./JS/one_page.js"></script>
+	</head>
+
+	<body>
+		<!-- NAV -->
+		<div class = "wrap">
+			<div class = "menu-container">
+				<ul class = "menu">
+					<a href = "#home" id = "link"><li>HOME</li></a>
+					<a href = "#gallery"><li>GALLERY</li></a>
+					<a href = "#contact"><li>CONTACT</li></a>
+				</ul>
+			</div>
+		</div>
+		<!-- END NAV -->
+		
+		<!-- HOME -->
+		<div id ="home">
+			<div class = "container">
+				<div class = "text-center">
+					<span class = "head-main">Mass Effect</span>
+					<p> Mass Effect is a video game series created by Bioware </p>
+					<article>
+						<h2>Mass Effect 1</h2>
+						<p>Mass Effect 1 originally came out in 2007.</p>
+					</article>
+					<details>
+						<summary> Mass Effect Legendary Edition </summary>
+						<p> The game was re-released as a complete collection called Mass Effect: Legendary Edition, in 2021. </p>
+					</details>
+				</div>
+			</div>
+		</div>
+		<!-- END HOME -->
+		
+		<!-- GALLERY -->
+		<section id = "gallery">
+			<div id = "container">
+				<h1> Gallery </h1>
+				<div class = "flex-container">
+				
+				<!-- PHOTO-CONTAINER 1 -->
+				<div class = "photo-container">
+					<div class = "photo">
+						<img src = "Images/Thumb/ME_1_Small.png" alt = "Ashley">
+						<div class = "photo-overlay">
+							<h3>Click to Enlarge</h3>
+						</div>
+					</div>
+				</div>
+				<!-- END PHOTO-CONTAINER 1 -->
+				
+				<!-- PHOTO-CONTAINER 2 -->
+				<div class = "photo-container">
+					<div class = "photo">
+						<img src = "Images/Thumb/ME_2_Small.png" alt = "Kaidan">
+						<div class = "photo-overlay">
+							<h3>Click to Enlarge</h3>
+						</div>
+					</div>
+				</div>
+				<!-- END PHOTO-CONTAINER 2 -->
+				
+				<!-- PHOTO-CONTAINER 3 -->
+				<div class = "photo-container">
+					<div class = "photo">
+						<img src = "./Images/Thumb/ME_3_Small.png" alt = "Liara">
+						<div class = "photo-overlay">
+							<h3>Click to Enlarge</h3>
+						</div>
+					</div>
+				</div>
+				<!-- END PHOTO-CONTAINER 3 -->
+				
+				<!-- PHOTO-CONTAINER 4 -->
+				<div class = "photo-container">
+					<div class = "photo">
+						<img src = "Images/Thumb/ME_4_Small.png" alt = "Wrex">
+						<div class = "photo-overlay">
+							<h3>Click to Enlarge</h3>
+						</div>
+					</div>
+				</div>
+				<!-- END PHOTO-CONTAINER 4 -->
+				
+				<!-- PHOTO-CONTAINER 5 -->
+				<div class = "photo-container">
+					<div class = "photo">
+						<img src = "Images/Thumb/ME_5_Small.png" alt = "Garrus">
+						<div class = "photo-overlay">
+							<h3>Click to Enlarge</h3>
+						</div>
+					</div>
+				</div>
+				<!-- END PHOTO-CONTAINER 5 -->
+				
+				<!-- PHOTO-CONTAINER 6 -->
+				<div class = "photo-container">
+					<div class = "photo">
+						<img src = "Images/Thumb/ME_6_Small.png" alt = "Tali">
+						<div class = "photo-overlay">
+							<h3>Click to Enlarge</h3>
+						</div>
+					</div>
+				</div>
+				<!-- END PHOTO-CONTAINER 6 -->
+			</div>
+
+			<!--MODAL LIGHTBOX GALLERY -->
+			<div class = "row">
+				<div class = "column">
+					<img src = "Images/Thumb/ME_1_Small.png" onclick = "openModal();currentSlide(1)" class = "hover-shadow">
+				</div>
+				<div class = "column">
+					<img src = "Images/Thumb/ME_2_Small.png" onclick = "openModal();currentSlide(2)" class = "hover-shadow">
+				</div>
+				<div class = "column">
+					<img src = "Images/Thumb/ME_3_Small.png" onclick = "openModal();currentSlide(3)" class = "hover-shadow">
+				</div>
+				<div class = "column">
+					<img src = "Images/Thumb/ME_4_Small.png" onclick = "openModal();currentSlide(4)" class = "hover-shadow">
+				</div>
+				<div class = "column">
+					<img src = "Images/Thumb/ME_5_Small.png" onclick = "openModal();currentSlide(5)" class = "hover-shadow">
+				</div>
+				<div class = "column">
+					<img src = "Images/Thumb/ME_6_Small.png" onclick = "openModal();currentSlide(6)" class = "hover-shadow">
+				</div>
+			</div>
+
+			<!-- The Lightbox -->
+			<div id = "myModal" class = "modal">
+				<span class = "close cursor" onclick = "closeModal()">&times;</span>
+				<div class = "modal-content">
+					<div class = "mySlides">
+						<div class = "numbertext">1 / 6</div>
+						<img src = "Images/Thumb/ME_1.png" style = "width:100%">
+					</div>
+					<div class = "mySlides">
+						<div class = "numbertext">2 / 6</div>
+						<img src = "Images/Thumb/ME_2.png" style = "width:100%">
+					</div>
+					<div class = "mySlides">
+						<div class = "numbertext">3 / 6</div>
+						<img src = "Images/Thumb/ME_3.png" style = "width:100%">
+					</div>
+					<div class = "mySlides">
+						<div class = "numbertext">4 / 6</div>
+						<img src = "Images/Thumb/ME_4.png" style = "width:100%">
+					</div>
+					<div class = "mySlides">
+						<div class = "numbertext">5 / 6</div>
+						<img src = "Images/Thumb/ME_5.png" style = "width:100%">
+					</div>
+					<div class = "mySlides">
+						<div class = "numbertext">6 / 6</div>
+						<img src = "Images/Thumb/ME_6.png" style = "width:100%">
+					</div>
+
+					<!-- Next/Previous -->
+					<a class = "prev" onclick = "plusSlides(-1)">&#10094;</a>
+					<a class = "next" onclick = "plusSlides(1)">&#10095;</a>
+
+					<!-- Caption Text -->
+					<div class = "caption-container">
+						<p id = "caption"></p>
+					</div>
+
+					<!-- Thumbnail Image controls -->
+					<div class = "column">
+						<img class = "demo" src = "Images/Thumb/ME_1_Small.png" onclick = "currentSlide(1)" alt = "Ashley">
+					</div>
+					<div class = "column">
+						<img class = "demo" src = "Images/Thumb/ME_2_Small.png" onclick = "currentSlide(2)" alt = "Kaidan">
+					</div>
+					<div class = "column">
+						<img class = "demo" src = "Images/Thumb/ME_3_Small.png" onclick = "currentSlide(3)" alt = "Liara">
+					</div>
+					<div class = "column">
+						<img class = "demo" src = "Images/Thumb/ME_4_Small.png" onclick = "currentSlide(4)" alt = "Wrex">
+					</div>
+					<div class = "column">
+						<img class = "demo" src = "Images/Thumb/ME_5_Small.png" onclick = "currentSlide(5)" alt = "Garrus">
+					</div>
+					<div class = "column">
+						<img class = "demo" src = "Images/Thumb/ME_6_Small.png" onclick = "currentSlide(6)" alt = "Tali">
+					</div>
+				</div>
+			</div>
+			<!-- END LIGHTBOX -->
+
+			<!-- VIDEO CONTAINER 1 -->
+			<div class = "video-container">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/-_6ZMr2bMco" justify-content=center title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen alt = "ME 1 Trailer"></iframe>
+			</div>
+		</section>
+		<!-- END GALLERY -->
+		
+		<!--CONTACT -->
+		<section id = "contact">
+			<div class = "container">
+				<div class = "heading-padding">
+					<h1 class = "heading-padding">Contact Us!</h1>
+					<div class = "reservation">
+						<h2><span>Learn more about Mass Effect!</span>
+						</h2>
+						<p class = "rsvp-text">
+							Please provide us with your basic contact information.
+						</p>
+						<div class = "form-rsvp">
+							<form action = "" method = "post">
+								<input class = "rsvp" type = "text" value = "First Name">
+								<input class = "rsvp" type = "text" value = "Last Name">
+								<input class = "rsvp" type = "text" value = "Email Address">
+								<input class = "rsvp" type = "text" value = "Phone Number">
+								<div class = "form-spacer">
+									<label class = "terms"> Terms and Conditions</label>
+								</div>
+								<div class = "submit">
+									<input type = "submit" value = "Submit">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--END RSVP -->
+		
+		<!--FOOTER -->
+		<div id = "footer">
+			https://masseffect.fandom.com/wiki/Mass_Effect_Wiki &nbsp;|&nbsp; &copy; 2023
+		</div>
+		<!-- END FOOTER -->
+		
+	
+	</body>
+
+</html>
