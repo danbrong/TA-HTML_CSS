@@ -3,18 +3,96 @@
 	<head>
 		<title> Assignment </title>
 		<meta char set ="utf-8">
+		<link rel = "stylesheet" type = "text/css" href = "./CSS/Assignment.css">
+		<script src = "http://code.jquery.com/jquery-latest.min.js" type = "text/javascript"></script>
 	</head>
 	<body> 
+		<script>
+			document.body.classList.add('fade-out');
+		</script>
 		<main>
-			<h1> My First HTML Assignment </h1>
+			<h1 style = "font-size:4vw;"> My First HTML Assignment </h1>
 			<h3> Introduction </h3>
-				<p> This is my first ever HTML assignment. I have formatted basic elements on the page, and will continue to work off of this document. </p>
+				<p style ="font-size:2vw"> This is my first ever HTML assignment. I have formatted basic elements on the page, and will continue to work off of this document. </p>
 			<h3> HTML Practice Skills </h3>
 			<h4> HTML Blockquote </h4>
 				A quote about Mass Effect, from Wikipedia:
 				<blockquote cite = "https://en.wikipedia.org/wiki/Mass_Effect">
 					Mass Effect is a military science fiction media franchise created by Casey Hudson. The franchise depicts a distant future where humanity and several alien civilizations have colonized the galaxy using technology left behind by advanced precursor civilizations. 
 				</blockquote>
+
+			<h4> Contact Details </h4>
+				<form id = "contact" action = "/action_page.php" onsubmit = "return validateForm()" method = "post">
+					<label for = "fname">Full Name:</label>
+					<br>
+					<input type = "text" id = "fname" name = "fname">
+					<br>
+					<label for = "phone">Phone Number:</label>
+					<br>
+					<input type = "text" id = "phone" name = "phone">
+					<br>
+					<br>
+					<input type = "submit" value = "Submit">
+				</form>
+
+				<!-- POP UP FORM -->
+				<button class = "open-button" onclick = "openForm()">Log In</button>
+
+				<div class = "form-popup" id = "myForm">
+					<form action = "/action_page.php" class = "form-container">
+						<h1>Login Form!</h1>
+
+						<label for = "email"><b>Email</b></label>
+						<input type = "text" placeholder = "Enter Email" name = "email" required>
+
+						<label for = "pass"><b>Password</b></label>
+						<input type = "password" placeholder = "Enter Password" name = "pass" required>
+
+						<button type = "submit" class = "btn">Login</button>
+						<button type = "button" class = "btn cancel" onclick = "closeForm()">Close</button>
+					</form>
+				</div>
+
+				<!-- STICKY ELEMENT -->
+				<div class = "sticky">
+					<button class = "open-button2" onclick = "openContact()">Contact Info!</button>
+
+					<div class = "form-popup" id = "myContact">
+						<form action = "/action_page.php" class = "form-container">
+							<label for = "myName"><b>Full Name</b></label>
+							<input type = "text" placeholder = "Enter Name" name = "myName" required>
+
+							<label for = "myNumber"><b>Phone Number</b></label>
+							<input type = "text" placeholder = "Enter Phone Number" name = "myNumber" required>
+
+							<label for = "myEmail"><b>Email</b></label>
+							<input type = "text" placeholder = "Enter your Email" name = "myEmail" required>
+
+							<button type = "submit" class = "btn">Submit</button>
+							<button type = "button" class = "btn cancel" onclick = "closeContact()">Close</button>					
+						</form>
+					</div>
+				</div>
+
+				<!-- KEYFRAMES ANIMATION -->
+				<div class = "animate"></div>
+
+				<!--SlideShow-->
+				<div id = "slideshow">
+					<div>
+						<img src = "./HTML Resources/Dog.jpg" width = 80% height = 80%>
+					</div>
+
+					<div>
+						<img src = "./HTML Resources/test.jpg">
+					</div>
+
+					<div>
+						Anything can go here
+					</div>
+				</div>
+
+			<!-- Video Embed -->
 			<h4> HTML Youtube Embed </h4>
 				<iframe width="560" height="315" 
 				src="https://www.youtube.com/embed/-_6ZMr2bMco" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
@@ -27,9 +105,11 @@
 					<a href = "Dog_Video.html"> Dog Video </a>
 				</nav>
 			<h6> Images </h6>
-				<img src = https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2955&q=80>
+				<img id = "cat" src = "https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2955&q=80" width = 50% height = 50%>
 				<a href = "Dog.html">Dog Image</a>
 				<a href = "https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2955&q=80">Cat Image</a>
+
+		<script src = "./JS/Assignment.js"></script>
 	</body>
 	<footer> This footer was made on 3.15 </footer>
 </html>
