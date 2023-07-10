@@ -26,3 +26,5 @@ Notepad++ - Basic text editor for early coding
 	
 	Portfolio Site - Website created to be the backbone for my online portfolio. As I create more projects, I will have more examples of work that I am able to perform.
 
+	To-Do App - Basic Web app with simple javascript functionality and checkbox functionality.
+
